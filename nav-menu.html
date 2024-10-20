@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav-Menu</title>
+  <link rel="stylesheet" href="nav-menu.css">
+</head>
+<body>
+<nav>
+  <ul class="sidebar">
+    <li onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Login</a></li>
+  </ul>
+  <ul>
+    <li><a href="#">Welcome, User</a></li>
+    <li class="hideonmobile"><a href="#">About</a></li>
+    <li class="hideonmobile"><a href="#">Projects</a></li>
+    <li class="hideonmobile"><a href="#">Contact</a></li>
+    <li class="hideonmobile"><a href="#">Login</a></li>
+    <li class="menu-button" onclick="ShowSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+  </ul>
+</nav>
+<script src="nav-menu.js"></script>
+</body>
+</html>
