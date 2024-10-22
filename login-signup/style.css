@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --accent-color: rgb(105, 1, 241);
+  --base-color: white;
+  --text-color: black;
+  --input-color: rgba(48, 2, 255, 0.1);
+  --error-color: rgba(255, 0, 0, 0.8);
+  
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: 'poppins', 'sans-serif', 'Verdana';
+  color: var(--text-color);
+  text-align: center;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgb(6, 241, 18) 8%, rgb(0, 0, 0) 70%);
+  overflow: hidden;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--base-color);
+  min-height: 60vh;
+  min-width: 370px;
+  border-radius: 1rem;
+}
+h2{
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+form > div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+form label{
+  flex-shrink: 0;
+  background-color: var(--accent-color);
+  fill: var(--text-color);
+  color: var(--text-color);
+  border-radius: 10px 0px 0px 10px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 5px;
+  cursor: pointer;
+}
+form input{
+  flex-wrap: 1;
+  height: 40px;
+  min-width: 0;
+  padding: 1rem;
+  font: inherit;
+  border: 2px solid var(--input-color);
+  border-radius: 0px 10px 10px 0px;
+  background-color: var(--input-color);
+  transition: 0.2s ease;
+}
+form input:hover{
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+form input:focus{
+  outline: none;
+  border-color: var(--text-color);
+}
+ div:has(input:focus) > label{
+  background-color: var(--text-color);  
+  fill: var(--base-color);
+  color: var(--text-color);
+ }
+ form input::placeholder{
+  color: var(--text-color);
+ }
+ form button{
+  margin-top: 10px;
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  background-color: var(--accent-color);
+  color: var(--base-color);
+  font-weight: bold;
+  border: none;
+ }
+ form button:hover{
+  color: var(--base-color);
+  background-color: var(--text-color);
+  border: none;
+  cursor: pointer;
+ }
+ form button:active{
+  color: var(--base-color);
+  background-color: var(--text-color);
+  transform: scale(0.9);
+ }
+ a{
+  text-decoration: none;
+  color: var(--accent-color);
+  font-size: medium;
+  font-weight: 600;
+ }
+ a:hover{
+ text-decoration: underline;
+ }
+ /*created dynamically in JS*/
+.incorrect label{
+  background-color: var(--error-color);
+ }
+ .incorrect input{
+  border-color: var(--error-color);
+ }
+
+ .error-message{
+  color: var(--error-color);
+  width: 75%;
+  font-size: smaller;
+  text-align: center;
+ }
+ 
