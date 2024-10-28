@@ -6,11 +6,6 @@
 }
 body{
   min-height: 100vh;
-  /*background-image: url(images/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-*/
   background-color: #DFF2EB;
   font-family: 'poppins', sans-serif, serif;
 }
